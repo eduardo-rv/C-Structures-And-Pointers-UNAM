@@ -41,7 +41,8 @@ int main()
 {
     
     Complejo a,b,c;
-    a = Leer;
+    a = Leer();
+    Escribir(a);
     
 
     return 0;
