@@ -32,4 +32,42 @@ Este archivo es mi referencia rápida para el desarrollo.
 ---
 
 ## ⚙️ 3. PROGRAMACIÓN EN C / C PROGRAMMING
-*Comp
+*Compilar y ejecutar / Compile and run.*
+
+| Proceso (Process) | Comando (Command) | Indicación (Instruction) |
+| :--- | :--- | :--- |
+| **Compile** | `gcc code.c -o app` | **Compile the code into an app.** (Compila el código en una app.) |
+| **Run** | `./app` | **Run the program.** (Ejecuta el programa.) |
+
+---
+
+## 🐙 4. GITHUB WORKFLOW / FLUJO DE TRABAJO
+*Subir cambios a la nube / Upload changes to the cloud.*
+
+1. **Check Status** (Revisar estado):
+   `git status` -> *See modified files.* (Ver archivos modificados.)
+2. **Add Changes** (Preparar cambios):
+   `git add .` -> *Stage all files.* (Preparar todos los archivos.)
+3. **Commit** (Guardar versión):
+   `git commit -m "Description"` -> *Save a snapshot.* (Guardar una instantánea.)
+4. **Push** (Subir):
+   `git push origin main` -> *Upload to GitHub.* (Subir a GitHub.)
+5. **Pull** (Bajar):
+   `git pull origin main` -> *Download latest updates.* (Bajar últimas actualizaciones.)
+
+---
+
+## 🗄️ 5. BASES DE DATOS / DATABASES (MySQL)
+*Administrar datos / Manage data.*
+
+* **Login** (Entrar): `mysql -u root -p` 
+  *(Access the server / Acceder al servidor.)*
+* **List DBs** (Ver bases): `SHOW DATABASES;`
+  *(Show all databases / Mostrar todas las bases.)*
+* **Use DB** (Usar base): `USE <name>;`
+  *(Select a database / Seleccionar una base.)*
+* **Tables** (Ver tablas): `SHOW TABLES;`
+  *(Show all tables / Mostrar todas las tablas.)*
+
+---
+**Focus on the goal. No distractions.**
