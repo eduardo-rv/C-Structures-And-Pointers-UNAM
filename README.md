@@ -70,4 +70,19 @@ Este archivo es mi referencia rápida para el desarrollo.
   *(Show all tables / Mostrar todas las tablas.)*
 
 ---
+---
+
+## 🛠️ PASOS PARA ACTUALIZAR (STEPS TO UPDATE)
+*Sigue esta tabla para modificar este archivo desde la terminal.*
+
+| # | Acción (Action) | Comando o Atajo (Command/Shortcut) |
+| :--- | :--- | :--- |
+| **1** | **Abrir archivo** (Open file) | `nano README.md` |
+| **2** | **Pegar contenido** (Paste content) | `Ctrl + Shift + V` |
+| **3** | **Guardar cambios** (Save changes) | `Ctrl + O` + `Enter` |
+| **4** | **Salir del editor** (Exit editor) | `Ctrl + X` |
+| **5** | **Subir a GitHub** (Push to GitHub) | `subir` |
+
+---
+
 **Focus on the goal. No distractions.**
