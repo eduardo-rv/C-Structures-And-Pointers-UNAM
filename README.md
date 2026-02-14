@@ -1,47 +1,88 @@
-🚀 C Development & Git Cheat Sheet
-Course: Programación I - UNAM FES Acatlán
+# 🛠️ GUIA DE COMANDOS / COMMAND GUIDE
 
-Student: Eduardo Rosas Vazquez
+Este archivo es mi referencia rápida para el desarrollo. 
+(This file is my quick reference for development.)
 
-This guide contains the essential commands for editing, compiling, and managing C projects in a Linux-based terminal environment like GitHub Codespaces.
+---
 
-📝 1. Text Editing (Nano)
-Use these commands to modify your source code directly in the terminal.
+## 📁 1. NAVEGACIÓN / NAVIGATION
+*Moverse en el sistema / Moving through the system.*
 
-nano main.c — Open or create a C file for editing.
+| Comando (Command) | Acción (Action) | Descripción (Description) |
+| :--- | :--- | :--- |
+| `pwd` | **Print Working Directory** | Muestra dónde estás parado. (Shows where you are located.) |
+| `ls` | **List Files** | Lista los archivos en la carpeta. (List files in the folder.) |
+| `cd <name>` | **Change Directory** | Entra a una carpeta. (Enter a folder.) |
+| `cd ..` | **Go Back** | Regresa un nivel atrás. (Go back one level.) |
+| `mkdir <name>` | **Make Directory** | Crea una carpeta nueva. (Create a new folder.) |
+| `clear` | **Clear Screen** | Limpia la terminal. (Cleans the terminal.) |
 
-Ctrl + O + Enter — Save (Write Out) changes to the file.
+---
 
-Ctrl + X — Exit the editor.
+## 📝 2. EDITOR NANO / TEXT EDITOR
+*Editar archivos desde la terminal / Editing files from terminal.*
 
-Ctrl + K — Cut (delete) a whole line.
+| Atajo (Shortcut) | Acción (Action) | Descripción (Description) |
+| :--- | :--- | :--- |
+| `nano <file>` | **Open/Create** | Abre o crea un archivo. (Opens or creates a file.) |
+| `Ctrl + O` | **Write Out** | Guarda los cambios. (Save changes.) |
+| `Ctrl + X` | **Exit** | Salir del editor. (Exit the editor.) |
+| `Ctrl + W` | **Where is** | Buscar una palabra. (Search for a word.) |
 
-Ctrl + U — Uncut (paste) a line.
+---
 
-🛠️ 2. Compiling and Running (GCC)
-Turn your C logic into an executable program.
+## ⚙️ 3. PROGRAMACIÓN EN C / C PROGRAMMING
+*Compilar y ejecutar / Compile and run.*
 
-gcc main.c -o converter — Compile the code and create an output file named converter.
+| Proceso (Process) | Comando (Command) | Indicación (Instruction) |
+| :--- | :--- | :--- |
+| **Compile** | `gcc code.c -o app` | **Compile the code into an app.** (Compila el código en una app.) |
+| **Run** | `./app` | **Run the program.** (Ejecuta el programa.) |
 
-./converter — Run the compiled program.
+---
 
-📂 3. File Navigation (Linux)
-Move through your project directories.
+## 🐙 4. GITHUB WORKFLOW / FLUJO DE TRABAJO
+*Subir cambios a la nube / Upload changes to the cloud.*
 
-ls — List all files in the current folder.
+1. **Check Status** (Revisar estado):
+   `git status` -> *See modified files.* (Ver archivos modificados.)
+2. **Add Changes** (Preparar cambios):
+   `git add .` -> *Stage all files.* (Preparar todos los archivos.)
+3. **Commit** (Guardar versión):
+   `git commit -m "Description"` -> *Save a snapshot.* (Guardar una instantánea.)
+4. **Push** (Subir):
+   `git push origin main` -> *Upload to GitHub.* (Subir a GitHub.)
+5. **Pull** (Bajar):
+   `git pull origin main` -> *Download latest updates.* (Bajar últimas actualizaciones.)
 
-cd [folder_name] — Change Directory to enter a folder.
+---
 
-pwd — Print Working Directory to see exactly where you are.
+## 🗄️ 5. BASES DE DATOS / DATABASES (MySQL)
+*Administrar datos / Manage data.*
 
-☁️ 4. Version Control (Git)
-Keep your progress safe on GitHub.
+* **Login** (Entrar): `mysql -u root -p` 
+  *(Access the server / Acceder al servidor.)*
+* **List DBs** (Ver bases): `SHOW DATABASES;`
+  *(Show all databases / Mostrar todas las bases.)*
+* **Use DB** (Usar base): `USE <name>;`
+  *(Select a database / Seleccionar una base.)*
+* **Tables** (Ver tablas): `SHOW TABLES;`
+  *(Show all tables / Mostrar todas las tablas.)*
 
-git status — Check which files have been modified.
+---
+---
 
-git add . — Prepare all changes for saving (Staging).
+## 🛠️ PASOS PARA ACTUALIZAR (STEPS TO UPDATE)
+*Sigue esta tabla para modificar este archivo desde la terminal.*
 
-git commit -m "Your message" — Save a snapshot of your progress locally.
+| # | Acción (Action) | Comando o Atajo (Command/Shortcut) |
+| :--- | :--- | :--- |
+| **1** | **Abrir archivo** (Open file) | `nano README.md` |
+| **2** | **Pegar contenido** (Paste content) | `Ctrl + Shift + V` |
+| **3** | **Guardar cambios** (Save changes) | `Ctrl + O` + `Enter` |
+| **4** | **Salir del editor** (Exit editor) | `Ctrl + X` |
+| **5** | **Subir a GitHub** (Push to GitHub) | `subir` |
 
-git push origin main — Upload your changes to the GitHub repository.
+---
 
+**Focus on the goal. No distractions.**
