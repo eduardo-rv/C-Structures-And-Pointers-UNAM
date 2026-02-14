@@ -1,47 +1,35 @@
-🚀 C Development & Git Cheat Sheet
-Course: Programación I - UNAM FES Acatlán
+# 🛠️ GUIA DE COMANDOS / COMMAND GUIDE
 
-Student: Eduardo Rosas Vazquez
+Este archivo es mi referencia rápida para el desarrollo. 
+(This file is my quick reference for development.)
 
-This guide contains the essential commands for editing, compiling, and managing C projects in a Linux-based terminal environment like GitHub Codespaces.
+---
 
-📝 1. Text Editing (Nano)
-Use these commands to modify your source code directly in the terminal.
+## 📁 1. NAVEGACIÓN / NAVIGATION
+*Moverse en el sistema / Moving through the system.*
 
-nano main.c — Open or create a C file for editing.
+| Comando (Command) | Acción (Action) | Descripción (Description) |
+| :--- | :--- | :--- |
+| `pwd` | **Print Working Directory** | Muestra dónde estás parado. (Shows where you are located.) |
+| `ls` | **List Files** | Lista los archivos en la carpeta. (List files in the folder.) |
+| `cd <name>` | **Change Directory** | Entra a una carpeta. (Enter a folder.) |
+| `cd ..` | **Go Back** | Regresa un nivel atrás. (Go back one level.) |
+| `mkdir <name>` | **Make Directory** | Crea una carpeta nueva. (Create a new folder.) |
+| `clear` | **Clear Screen** | Limpia la terminal. (Cleans the terminal.) |
 
-Ctrl + O + Enter — Save (Write Out) changes to the file.
+---
 
-Ctrl + X — Exit the editor.
+## 📝 2. EDITOR NANO / TEXT EDITOR
+*Editar archivos desde la terminal / Editing files from terminal.*
 
-Ctrl + K — Cut (delete) a whole line.
+| Atajo (Shortcut) | Acción (Action) | Descripción (Description) |
+| :--- | :--- | :--- |
+| `nano <file>` | **Open/Create** | Abre o crea un archivo. (Opens or creates a file.) |
+| `Ctrl + O` | **Write Out** | Guarda los cambios. (Save changes.) |
+| `Ctrl + X` | **Exit** | Salir del editor. (Exit the editor.) |
+| `Ctrl + W` | **Where is** | Buscar una palabra. (Search for a word.) |
 
-Ctrl + U — Uncut (paste) a line.
+---
 
-🛠️ 2. Compiling and Running (GCC)
-Turn your C logic into an executable program.
-
-gcc main.c -o converter — Compile the code and create an output file named converter.
-
-./converter — Run the compiled program.
-
-📂 3. File Navigation (Linux)
-Move through your project directories.
-
-ls — List all files in the current folder.
-
-cd [folder_name] — Change Directory to enter a folder.
-
-pwd — Print Working Directory to see exactly where you are.
-
-☁️ 4. Version Control (Git)
-Keep your progress safe on GitHub.
-
-git status — Check which files have been modified.
-
-git add . — Prepare all changes for saving (Staging).
-
-git commit -m "Your message" — Save a snapshot of your progress locally.
-
-git push origin main — Upload your changes to the GitHub repository.
-
+## ⚙️ 3. PROGRAMACIÓN EN C / C PROGRAMMING
+*Comp
