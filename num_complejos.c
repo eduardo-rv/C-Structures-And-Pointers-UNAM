@@ -73,7 +73,15 @@ Complejo producto(Complejo n1, Complejo n2)
 
 
 // Funcion division
+Complejo division(Complejo n1, Complejo n2)
+{
+	Complejo resultado;
 
+	resultado.real = n1.real / n2.real;
+	resultado.imaginaria = n1.imaginaria / n2.imaginaria;
+
+	return resultado;
+}
 
 int main()
 {
