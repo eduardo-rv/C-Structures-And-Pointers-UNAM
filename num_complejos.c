@@ -117,8 +117,28 @@ int main()
 			n1 = Leer();
 			n2 = Leer();
 			break;
+		case 2:
+			resultado = suma(n1, n2);
+			break;
+		case 3:
+			resultado = resta(n1, n2);
+			break;
+		case 4:
+			resultado = producto(n1, n2);
+			break;
+		case 5:
+			resultado = division(n1, n2);
+			break;
+		case 6:
+			printf("Saliendo del programa");
+			break;
 	}
 
+if(opcion != 1 && opcion != 6)
+{
+	printf("El resultado es: ");
+	Escribir(resultado);
+}
 
 	return 0;
 }
