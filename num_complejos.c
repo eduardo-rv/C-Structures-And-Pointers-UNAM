@@ -83,9 +83,41 @@ Complejo division(Complejo n1, Complejo n2)
 	return resultado;
 }
 
+
+int menu()
+{
+	int opcion;
+
+	printf("Menu de operaciones con numeros complejos\n\n");
+	printf("1. Lectura de los numeros\n 2. Suma\n 3. Resta\n 4. Producto\n 5. Division\n 6. Salir\n\n");
+
+	do
+	{
+		printf("Ingresa una opcion: ");
+		scanf("%d", &opcion);
+	} while (opcion < 1 || opcion > 6);
+
+	return opcion;
+}
+
+
 int main()
 {
-	printf("Hello World");
+	Complejo n1, n2, resultado;
+	int opcion;
+
+	do
+	{
+		opcion = menu();
+	} while(opcion != 6);
+
+	switch(opcion)
+	{
+		case 1:
+			n1 = Leer();
+			n2 = Leer();
+			break;
+	}
 
 	return 0;
 }
