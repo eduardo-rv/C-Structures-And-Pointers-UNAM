@@ -1,9 +1,19 @@
 # 💻 C Structures & Pointers
 
-Applied Mathematics and Computing (MAC) - FES Acatlán, UNAM
+Second-semester C programming exercises from the Applied Mathematics and Computation (MAC) program at UNAM. Focusing my learning path on data systems and software engineering, this repository documents my progress in low-level data management, dynamic memory, and custom data structures.
 
-This repository continues my technical evolution during my second semester of C programming. As an aspiring Data Engineer, I believe that understanding data at a low level—specifically how it is structured, accessed in memory, and persisted in files—is the true foundation for building highly optimized data systems in the future.
+## 🛠️ Tech Stack
+* **Language:** C
+* **Compiler:** GCC
+* **Editor:** Vim
+* **Environment:** Linux (Ubuntu) Terminal
 
-## 🎯 Objective
+## 🚀 How to Run
 
-To move beyond basic algorithmic logic and apply advanced C programming concepts to solve complex computational problems. This repository documents my progress in mastering direct memory manipulation, dynamic allocation, custom data structures, and system-level file handling.
+To test a specific project, clone the repository, enter the desired folder, compile, and run:
+
+```bash
+git clone [https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git](https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git)
+cd C-Structures-And-Pointers-UNAM/folder_name
+gcc file_name.c -o app
+./app
