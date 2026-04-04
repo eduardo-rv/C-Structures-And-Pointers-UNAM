@@ -14,6 +14,6 @@ To test a specific project, clone the repository, enter the desired folder, comp
 
 ```bash
 git clone https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git
-cd C-Structures-And-Pointers-UNAM/folder_name
-gcc file_name.c -o app
+cd C-Structures-And-Pointers-UNAM/FOLDER_NAME
+gcc FILE_NAME.c -o app
 ./app
