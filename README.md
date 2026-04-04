@@ -13,7 +13,7 @@ Second-semester C programming exercises from the Applied Mathematics and Computa
 To test a specific project, clone the repository, enter the desired folder, compile, and run:
 
 ```bash
-git clone [https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git](https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git)
+git clone https://github.com/eduardo-rv/C-Structures-And-Pointers-UNAM.git
 cd C-Structures-And-Pointers-UNAM/folder_name
 gcc file_name.c -o app
 ./app
