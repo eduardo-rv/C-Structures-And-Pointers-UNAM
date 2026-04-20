@@ -21,5 +21,11 @@ typedef struct
 
 int main()
 {
+	Customer directory[100];
+	int counter = 0;
+	
+	printf("System initialized.\n");
+
+
 	return 0;
 }
