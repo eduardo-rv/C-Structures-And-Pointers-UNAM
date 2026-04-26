@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct
+{
+	char name[30];
+	int price;
+	int quantity;
+}Product;
+
 int main()
 {
-	printf("jjaslñkdfjaskñljfñadskljf");
+	
 	return 0;
 }
