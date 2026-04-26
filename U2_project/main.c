@@ -80,5 +80,11 @@ int main()
 	addProduct(&count, &inventory);
 
 	displayInventory(count, inventory);
+
+	if (inventory != NULL)
+	{
+		free(inventory);
+		inventory = NULL;
+	}
 	return 0;
 }
