@@ -44,6 +44,33 @@ void addProduct(int *count, Product **inventory)
 	printf("Product added successfully\n\n");
 }
 
+
+void displayInventory(int count, Product *inventory)
+{
+	if (count == 0)
+	{
+		printf("\nThe inventory is empty\n\n");
+		return;
+	}
+
+	printf("---Current Inventory---\n");
+
+	int i;
+	for(i = 0; i < count; i++)
+	{
+		printf("Item: %d\n", i + 1);
+		printf("Name: %s\n", inventory[i].name);
+		printf("Price: $%d\n", inventory[i].price);
+		printf("Quantity: %d\n", inventory[i].quantity);
+
+		printf("\n");
+	}
+
+	printf("------------------------\n\n");
+
+}
+
+
 int main()
 {
 	int count = 0;
@@ -52,6 +79,6 @@ int main()
 	addProduct(&count, &inventory);
 	addProduct(&count, &inventory);
 
-
+	displayInventory(count, inventory);
 	return 0;
 }
