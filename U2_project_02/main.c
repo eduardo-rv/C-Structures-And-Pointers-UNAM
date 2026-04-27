@@ -49,22 +49,53 @@ int menu()
 void AgregarRepartidor(int *total, Repartidor **flotilla)
 {
 	Repartidor *p = NULL;
+
 	if(*total == 0)
 	{
-		p = (p)malloc(1 * flotilla);
+		//puntero = (Tipo_de_dato *) malloc(cantidad * sizeof(Tipo_de_dato));
+		p = (Repartidor *) malloc(1 * sizeof(Repartidor));
 	}
 	else
 	{
-		p = (p)realloc(Repartidor *total + 1);
+		//puntero = (Tipo_de_dato *) realloc(puntero_viejo, nueva_cantidad * sizeof(Tipo_de_Dato));
+		p = (Repartidor *) realloc(*flotilla, (*total + 1) * sizeof(Repartidor));
 	}
 
 	if(p ==	NULL)
 	{
-		print("Error");
+		printf("Error\n");
+		return;
 	}
 
 	*flotilla = p;
 
+	p[*total].borrado = 0;
+
+	printf("ID: ");
+	scanf("%d", &p[*total].id);
+
+	printf("Nombre: ");
+	scanf("%s", p[*total].nombre);
+
+	printf("Estado Repartidor (0=Disp, 1=Viaje, 2=Taller): ");
+	scanf("%d", &p[*total].estadoRepartidor);
+
+	printf("Tipo vehiculo (0=Moto, 1=Bici): ");
+	scanf("%d", &p[*total].vehiculo);
+
+	if(p[*total].vehiculo == 0)
+	{
+		printf("Cilindrada: ");
+		scanf("%s", &p[*total].detalles.cilindrada);
+	}
+	else
+	{
+		printf("tipo cuadro: ");
+		scanf("%s", p[*total].detalles.tipoCuadro);
+	}
+
+	//incremento del contador
+	*total += 1;
 }
 
 int main()
@@ -78,6 +109,7 @@ int main()
 		switch(opcion)
 		{
 			case 1:
+				AgregarRepartidor(&totalRepartidores, &flotilla);
 				break;
 			case 2:
 				break;
@@ -85,8 +117,8 @@ int main()
 				break;
 			case 4:
 				break;
-			default:
-				printf("Error");
+			default: 
+				printf("Error\n");
 				break;
 		}
 	}while(opcion != 4);	
